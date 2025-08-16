@@ -1,14 +1,17 @@
 /*
- * global.css
+ * global
  * 
  */
+
 @font-face {
   font-family: "Minecraft";
   src: url(/font/Minecraft.ttf) format("truetype");
 }
-
+.text-black {
+  color: black;
+}
 body {
-  background-color: #222222;
+  background-color: #f8f6f9;
   font-family: "Minecraft";
   color: aliceblue;
   margin: 0;
@@ -54,6 +57,7 @@ body {
 }
 
 @keyframes typing {
+  /* type animation & length */
   0% {
     width: 0;
   }
@@ -96,11 +100,91 @@ body {
 
 /* section 2 */
 .section-2 {
-  margin: auto;
+  padding-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  min-height: 100vh;
+  width: calc(100% - 40px);
   background-color: #f8f6f9;
+  overflow-x: hidden;
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  padding-top: 100px;
+  max-width: 1500px;
 }
 .box-2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* .box-2 p {
+  width: 1270px;
+} */
+.divider {
+  border: none;
+  border-top: 1px solid #222222;
+  width: 1500px;
+  margin: 20px 0;
+}
+
+/* text sizes */
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.text-xl {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.text-2xl {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-3xl {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-4xl {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.text-5xl {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 60px;
+  line-height: 1;
 }
