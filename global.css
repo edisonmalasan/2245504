@@ -58,7 +58,7 @@ body {
     width: 0;
   }
   20% {
-    width: 8ch; /* Adjusted for "Edison" */
+    width: 8ch;
   }
   40% {
     width: 8ch;
@@ -67,7 +67,7 @@ body {
     width: 0;
   }
   70% {
-    width: 11ch; /* Adjusted for "2245504" */
+    width: 11ch;
   }
   90% {
     width: 11ch;
@@ -88,7 +88,7 @@ body {
   40% {
     content: "Edison";
   }
-  50%,
+  80%,  /* made this 80% so that it will finish erasing Edison first before proceed to the next text*/
   100% {
     content: "2245504";
   }
